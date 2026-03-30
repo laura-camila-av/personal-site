@@ -17,13 +17,42 @@
   
     <h2>About me</h2>
     <div class = "dark-blue-section">
-        <p><img src="headshot-no-background.png" style="float:right; width: 11%; height: 11%;">
-        I am a fourth-year university student studying a Bachelor of Software Engineering (Honours) and a Bachelor of Commerce (Finance) at the University of Western Australia. 
-        I am a fourth-year university student studying a Bachelor of Software Engineering (Honours) and a Bachelor of Commerce (Finance) at the University of Western Australia. I am a fourth-year university student studying a Bachelor of Software Engineering (Honours) and a Bachelor of Commerce (Finance) at the University of Western Australia. I am a fourth-year university student studying 
-        a Bachelor of Software Engineering (Honours) and a Bachelor of Commerce (Finance) at the University of Western Australia. I am a fourth-year university student studying a Bachelor of Software Engineering (Honours) and a Bachelor of Commerce (Finance) at the University of Western Australia.
-        </p>
-        
-    </div>
+    <p><img src="headshot-no-background.png" style="float:right; width: 11%; height: 11%;">
+    I am an energetic fourth-year Bachelor of Engineering (Honours) and Commerce student at UWA, majoring in Software Engineering and Finance. 
+    I take pride in my strong, adaptable communication skills, shaped by my multilingual upbringing and strengthened through diverse experiences including competitive debating, retail customer service, private tutoring, and consulting work at Aurecon. 
+    These skills have helped me thrive in both specialised and multidisciplinary teams, contributing to shared success such as securing second place in Aurecon’s Design 2 Innovate competition, achieving high distinctions in university group projects, and supporting smooth project delivery within Aurecon’s Asset Management and Performance team. 
+    I have experience designing and building both university and personal projects using Python, HTML, CSS, JavaScript and SQL, and I am motivated to keep learning new languages and technologies as industry needs evolve. 
+    I am particularly interested in gaining experience within resources, finance and engineering‑focused industries where software is applied to physical systems, operations and commercial decision‑making.
+    </p>
+
+    <p>
+    When I am not studying or coding my own projects, I enjoy going to the gym and reading. 
+    I mainly enjoy reading non-fiction across topics like history, sociology and science to braoden ny understanding of how different systems interact in the world, but will read classic literature on occasion. 
+    I find reading strengthens my ability to think critically and creatively when analysing engineering problems.
+    My main passion is overseas travel. I find it incredibly interesting to immerse myself in new cultures, history and architecture and discover ways of living that are completely different to mine.
+    This has emboldened my appreciation for diverse perspectives when it comes to collaborative problem solving and influenced me to have an open mind.
+    </p>
+    
+    
+<div class="gallery">
+    <a target="_blank" href="/travel/IMG_8742.jpeg">
+        <img src="travel/IMG_8742.jpeg" alt="Amsterdam">
+    </a>
+
+    <a target="_blank" href="/travel/IMG_6289.jpg">
+        <img src="travel/IMG_6289.jpg" alt="Hakuba">
+    </a>
+
+    <a target="_blank" href="/travel/IMG_3145.jpg">
+        <img src="travel/IMG_3145.jpg" alt="Vietnam">
+    </a>
+
+    <a target="_blank" href="/travel/IMG_0056.jpeg">
+        <img src="travel/IMG_0056.jpg" alt="Fiji">
+    </a>
+</div>
+    
+</div>
     <h2>Education History</h2>
 
     <div>
@@ -137,7 +166,17 @@
             const name = document.getElementById("name").value;
             console.log("Submitted:", name);
         });
+    
+    function setStickyOffset() {
+        const header = document.querySelector('.green-header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        document.querySelectorAll('h2').forEach(h => {
+        h.style.top = headerHeight + 'px';
+    });
+    }
 
+setStickyOffset();
+window.addEventListener('resize', setStickyOffset);
     //sticky headers
 
     </script>
